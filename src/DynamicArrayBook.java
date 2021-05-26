@@ -7,7 +7,7 @@ public class DynamicArrayBook {
 	static boolean checkDup(String title) {
 		for(int i=0; i < bList.size();i++) {
 			if(title.equals(bList.get(i))==true) {
-				System.out.println("Áßº¹... "+title);
+				System.out.println("ì¤‘ë³µ... "+title);
 				return true;
 			}
 		}
@@ -17,14 +17,14 @@ public class DynamicArrayBook {
 		// TODO Auto-generated method stub
 		String title;
 		do {
-			System.out.print("Ã¥ Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä(ÀÔ·ÂÇÒ Ã¥ÀÌ ¾øÀ¸¸é enter)");
+			System.out.print("ì±… ì œëª©ì„ ìž…ë ¥í•˜ì„¸ìš”(ìž…ë ¥í•  ì±…ì´ ì—†ìœ¼ë©´ enter)");
 			title = sc.nextLine();
 			if(checkDup(title) == false) 
 				bList.add(title);
 			
 		} while(!title.equals(""));
 		
-		System.out.print("ÀÔ·ÂµÈ Ã¥ Á¦¸ñ ¸ñ·Ï : ");
+		System.out.print("ìž…ë ¥ëœ ì±… ì œëª© ëª©ë¡ : ");
 		for(int i=0; i < bList.size();i++) {
 			System.out.print(bList.get(i) + " ");
 		}
